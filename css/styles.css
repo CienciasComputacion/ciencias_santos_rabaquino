@@ -1,0 +1,71 @@
+/* ===== COLORES PERSONALIZADOS DEL LICEO ===== */
+:root {
+    --liceo-primary: #2E86AB;    /* Azul principal */
+    --liceo-secondary: #A23B72;  /* Morado secundario */
+    --liceo-accent: #F18F01;     /* Naranja de acento */
+    --liceo-success: #06D6A0;    /* Verde de éxito */
+}
+
+/* ===== ESTILOS DE LA NAVEGACIÓN ===== */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Estilos para los enlaces del menú */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.9);  /* Color blanco semi-transparente */
+    font-weight: 500;
+    transition: all 0.3s ease;    /* Transición suave en hover */
+}
+
+/* Efecto hover en los enlaces del menú */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;                  /* Blanco completo al hacer hover */
+    background-color: rgba(255,255,255,0.1);  /* Fondo semi-transparente */
+    border-radius: 5px;           /* Bordes redondeados */
+}
+
+/* ===== ESTILOS DE LAS TARJETAS ===== */
+.card {
+    transition: transform 0.2s ease-in-out;  /* Transición suave para el efecto hover */
+    border: none;                             /* Sin borde por defecto */
+    border-radius: 10px;                      /* Bordes redondeados */
+}
+
+/* Efecto de elevación al pasar el mouse sobre las tarjetas */
+.card:hover {
+    transform: translateY(-5px);              /* Mueve la tarjeta 5px hacia arriba */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;  /* Sombra más pronunciada */
+}
+
+/* ===== ESTILOS DEL TÍTULO PRINCIPAL ===== */
+.display-4 {
+    color: var(--liceo-primary);  /* Color azul del liceo */
+    font-weight: bold;
+}
+
+/* ===== ESTILOS DE LOS BOTONES ===== */
+.btn {
+    border-radius: 25px;          /* Botones completamente redondeados */
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;       /* Espaciado interno del botón */
+}
+
+/* ===== ESTILOS DEL FOOTER ===== */
+footer {
+    margin-top: auto;             /* Empuja el footer hacia abajo */
+}
+
+/* ===== ESTILOS RESPONSIVOS PARA MÓVILES ===== */
+@media (max-width: 768px) {
+    /* En pantallas pequeñas, reduce el tamaño del título */
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    /* Reduce el tamaño de los iconos en las tarjetas */
+    .card-body h2 {
+        font-size: 2rem;
+    }
+}

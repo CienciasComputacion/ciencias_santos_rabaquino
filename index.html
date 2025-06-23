@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liceo Santos Rabaquino - Ciencias</title>
+    
+    <!-- Enlaces a archivos CSS: Bootstrap primero, luego nuestros estilos -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- BARRA DE NAVEGACIÓN RESPONSIVA -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <!-- Logo/Marca del sitio (siempre visible) -->
+            <a class="navbar-brand" href="index.html">
+                <strong>🏫 Liceo Santos Rabaquino</strong>
+            </a>
+            
+            <!-- Botón hamburguesa para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú que se colapsa en móviles -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- ms-auto alinea el menú a la derecha -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">🏠 Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fisica/index.html">🔬 Física</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matematica/index.html">📐 Matemática</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quimica/index.html">⚗ Química</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biologia/index.html">🧬 Biología</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL DE LA PÁGINA -->
+    <div class="container mt-5">
+        <!-- Sección Hero (título principal) -->
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h1 class="display-4 mb-3">¡Bienvenidos a Ciencias!</h1>
+                <p class="lead">Explora el fascinante mundo de la física, matemática, química y biología</p>
+            </div>
+        </div>
+
+        <!-- TARJETAS DE MATERIAS (Grid responsivo) -->
+        <div class="row">
+            <!-- Tarjeta de Física -->
+            <div class="col-lg-3 col-md-6 mb-4"> <!-- 4 columnas en escritorio, 2 en tablet, 1 en móvil -->
+                <div class="card h-100 shadow-sm"> <!-- h-100 hace que todas las tarjetas tengan la misma altura -->
+                    <div class="card-body text-center">
+                        <h2 class="text-primary">🔬</h2>
+                        <h5 class="card-title">Física</h5>
+                        <p class="card-text">Descubre las leyes que rigen el universo</p>
+                        <a href="fisica/index.html" class="btn btn-primary">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de Matemática -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h2 class="text-success">📐</h2>
+                        <h5 class="card-title">Matemática</h5>
+                        <p class="card-text">El lenguaje universal de los números</p>
+                        <a href="matematica/index.html" class="btn btn-success">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de Química -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h2 class="text-warning">⚗</h2>
+                        <h5 class="card-title">Química</h5>
+                        <p class="card-text">Transforma la materia, transforma el mundo</p>
+                        <a href="quimica/index.html" class="btn btn-warning">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjeta de Biología -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h2 class="text-info">🧬</h2>
+                        <h5 class="card-title">Biología</h5>
+                        <p class="card-text">Explora los misterios de la vida</p>
+                        <a href="biologia/index.html" class="btn btn-info">Explorar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INFORMACIÓN ADICIONAL -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3>📚 Recursos disponibles</h3>
+                <ul>
+                    <li>Simuladores interactivos</li>
+                    <li>Ejercicios de práctica</li>
+                    <li>Exámenes modelo</li>
+                    <li>Videos educativos</li>
+                    <li>Documentos teóricos</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>🎯 Por niveles</h3>
+                <ul>
+                    <li><strong>Nivel 1:</strong> Conceptos básicos</li>
+                    <li><strong>Nivel 2:</strong> Contenido intermedio</li>
+                    <li><strong>Nivel 3:</strong> Temas avanzados</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER DEL SITIO -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Liceo Santos Rabaquino - Sitio Web de Ciencias</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS DE JAVASCRIPT: Bootstrap primero, luego nuestro script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
